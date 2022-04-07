@@ -6,9 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import Login from './components/login'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <Login />
-  </React.StrictMode>,
+  <App/>,
   document.getElementById('root')
 );
 

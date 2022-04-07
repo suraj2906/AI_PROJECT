@@ -14,14 +14,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #F7E2E2;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #1A132F;
 }
 
 .App-link {
@@ -41,4 +41,105 @@
   .Login-logo {
     border-radius: 30px;
   }
+}
+
+.Login-form{
+  display: flex;
+  flex-direction: column;
+  width:200px;
+  padding:20px;
+  width: 20%;
+  border-radius:100px;
+}
+
+.Login-form, *:before, *:after {
+  box-sizing: border-box;
+}
+
+input[type=text],input[type=password] {
+  padding: 10px;
+  margin:10px 0px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  border: 0;
+}
+
+button {
+
+  /* remove default behavior */
+  appearance:none;
+  -webkit-appearance:none;
+
+  /* usual styles */
+  padding:10px;
+  border:none;
+  background-color:#61A4BC;
+  color: #F7E2E2;
+  font-weight:600;
+  border-radius:5px;
+  width:100%;
+
+}
+
+button:hover{
+  background-color: #1A132F;
+  color:#F7E2E2
+}
+
+ul {  
+  list-style-type: none;  
+  margin: 0;  
+  padding: 0px;  
+  overflow: hidden;  
+  background-color: #61A4BC ;  
+}  
+  
+li {  
+  float: left;  
+}  
+  
+li a {  
+  display: block;  
+  color: #1A132F;  
+ font-size:20px;  
+  text-align: center;  
+  padding: 10px 20px;  
+  text-decoration: none;  
+}  
+
+li a:hover {  
+  background-color: #1A132F;  
+  color: #F7E2E2;  
+}  
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  background-color:#61A4BC;
+  color: #F7E2E2;   
+  padding: 10px;
+  margin:10px 0px;
+  box-shadow:0 0 15px 4px rgba(0,0,0,0.1);
+  border-radius: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: #1A132F;
+  color: #F7E2E2;
+}
+
+
+.navbuttons{
+  display: flex;
+  flex-direction: row ;
 }
